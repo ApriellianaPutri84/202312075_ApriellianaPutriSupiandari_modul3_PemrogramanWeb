@@ -1,0 +1,78 @@
+/* Custom CSS untuk styling tambahan dan efek hover */
+
+/* Warna Primer */
+:root {
+    --bs-primary: #ff80d3; /* Pink Bootstrap */
+    --bs-primary-dark: #035efc; /* Warna biru lebih gelap untuk hover */
+    --bs-secondary: #6c757d; /* Abu-abu Bootstrap */
+    --bs-light: #f8f9fa; /* Abu-abu terang Bootstrap */
+    --bs-dark: #343a40; /* Abu-abu gelap Bootstrap */
+}
+
+/* Override Bootstrap Primary Color */
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--bs-primary-dark);
+    border-color: var(--bs-primary-dark);
+}
+
+/* Styling untuk card produk/layanan */
+.service-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Efek naik sedikit saat hover */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Bayangan lebih jelas */
+}
+
+/* Styling untuk tombol "Selengkapnya" pada card */
+.btn-learn-more {
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-learn-more:hover {
+    background-color: var(--bs-primary-dark);
+    border-color: var(--bs-primary-dark);
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Adjust padding/margin for sections */
+section {
+    padding: 60px 0;
+}
+
+/* Navbar links hover effect */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff; /* Warna putih saat hover pada navbar link */
+    text-decoration: underline;
+}
+
+/* Table styling */
+.table th, .table td {
+    vertical-align: middle;
+}
+
+/* Responsive Images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
